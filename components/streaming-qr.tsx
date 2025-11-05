@@ -50,7 +50,7 @@ export function StreamingQR({
       return;
     }
 
-    const newStreamId = 'stream_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    const newStreamId = Math.random().toString(36).substr(2, 9);
     setStreamId(newStreamId);
 
     const newChunks: string[] = [];
